@@ -1,0 +1,40 @@
+public class Extra{
+	private double tax,offer;
+
+Extra(double tax,double offer){
+	this.tax=tax;
+	this.offer=offer;
+}
+
+void setTax(double tax){
+	this.tax=tax;
+}
+
+double getTax(){
+	return tax;
+}
+
+void setOffer(double offer){
+	this.offer=offer;
+}
+
+double getTax(){
+	return offer;
+}
+public double computeTax(double price){
+return this.tax*price;
+}
+
+public double computeOffer(double price){
+return price-this.offer;
+}
+//--------------------------------------------------------------
+
+public class NetPrice{
+public static void main(String... args){
+Extra e = new Extra();
+e.Extra(0.50,100.0);
+System.out.println("The tax is " +e.computeTax());
+System.out.println("The offer is " +e.computeOffer());
+}
+}
