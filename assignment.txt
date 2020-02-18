@@ -33,7 +33,7 @@ return price-this.offer;
 public class NetPrice{
 public static void main(String... args){
 Extra e = new Extra();
-e.Extra(0.50,100.0);
+e.Extra(0.90,107.0);
 System.out.println("The tax is " +e.computeTax());
 System.out.println("The offer is " +e.computeOffer());
 }
